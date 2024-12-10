@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Lista de Compras</h1>
+        <form id="form" class="mb-3">
+            <input type="text" id="produto" class="form-control" placeholder="Adicione um produto" required>
+            <input type="url" id="imagem" class="form-control mt-2" placeholder="URL da imagem" required>
+            <button type="submit" class="btn btn-primary mt-2">Adicionar</button>
+            <button type="button" id="btnLimpar" class="btn btn-warning mt-2 ml-2">Limpar Lista</button>
+        </form>
+        <ul id="lista" class="list-group"></ul>
+        <div id="alert" class="mt-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
